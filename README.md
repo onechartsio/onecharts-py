@@ -75,49 +75,37 @@ The above method creates a new piechart as shown below, which can be accessed us
 >>> res = oc.get_chart_config('KArrNpHzM-RLCo')
 >>> print(res)
 {
-	'chart': {
-		'chart_id': 'KArrNpHzM-RLCo',
-		'chart_title': 'Rainfall in 2023',
-		'created_time': '2023-09-10T06:03:20.694646Z',
-		'modified_time': '2023-09-10T06:03:20.694646Z',
-		'chart_type': 'pie',
-		'chart_sub_type': 'basic_pie',
-		'thumbnail_path': 'piechart',
-		'cloned_from': 'piechart',
-		'owner': 'onecharts',
-		'notes': 'Some notes',
-		'visibility': 'private',
-		'chart_options': {
-			'emphasis': [{
-				'itemStyle': {
-					'shadowBlur': 10,
-					'shadowColor': 'rgba(0, 0, 0, 0.5)',
-					'shadowOffsetX': 0
-				}
-			}],
-			'legend': [{
-				'align': 'auto',
-				'bottom': '0%',
-				'left': '45%',
-				'right': '0%'
-			}],
-			'series': [{
-				'radius': '70%',
-				'seriesLayoutBy': 'row',
-				'type': 'pie'
-			}],
-			'title': [{
-				'left': '50%',
-				'text': 'Pie Chart',
-				'textAlign': 'center',
-				'top': '0%'
-			}],
-			'tooltip': [{
-				'trigger': 'item'
-			}]
-		}
-	},
-	'success': True
+    "chart": {
+        "chart_id": "KArrNpHzM-RLCo",
+        "chart_title": "Rainfall in 2023",
+        "created_time": "2023-09-10T06:03:20.694646Z",
+        "modified_time": "2023-09-10T06:03:20.694646Z",
+        "chart_type": "pie",
+        "chart_sub_type": "basic_pie",
+        "thumbnail_path": "piechart",
+        "cloned_from": "piechart",
+        "owner": "onecharts",
+        "notes": "Some notes",
+        "visibility": "private",
+        "chart_options": {
+            "emphasis": [
+                {
+                    "itemStyle": {
+                        "shadowBlur": 10,
+                        "shadowColor": "rgba(0, 0, 0, 0.5)",
+                        "shadowOffsetX": 0,
+                    }
+                }
+            ],
+            "legend": [{"align": "auto", "bottom": "0%", "left": "45%", "right": "0%"}],
+            "series": [{"radius": "70%", "seriesLayoutBy": "row", "type": "pie"}],
+            "title": [
+                {"left": "50%", "text": "Pie Chart", "textAlign": "center", "top": "0%"}
+            ],
+            "tooltip": [{"trigger": "item"}],
+        },
+    },
+    "success": True,
 }
 ```
 
@@ -127,28 +115,16 @@ The above method creates a new piechart as shown below, which can be accessed us
 >>> res = oc.get_chart_data('KArrNpHzM-RLCo')
 >>> print(res)
 {
-	'data': {
-		'labels': ['Jan', 'Feb', 'Mar', 'Apr'],
-		'dataset': [
-            {
-			    'name': 'Jan',
-			    'value': 12
-		    },
-            {
-			    'name': 'Feb',
-			    'value': 16
-		    },
-            {
-			    'name': 'Mar',
-			    'value': 19
-		    },
-            {
-			    'name': 'Apr',
-			    'value': 22
-		    }
-        ]
-	},
-	'success': True
+    "data": {
+        "labels": ["Jan", "Feb", "Mar", "Apr"],
+        "dataset": [
+            {"name": "Jan", "value": 12},
+            {"name": "Feb", "value": 16},
+            {"name": "Mar", "value": 19},
+            {"name": "Apr", "value": 22},
+        ],
+    },
+    "success": True,
 }
 ```
 
