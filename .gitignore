@@ -1,0 +1,56 @@
+*.csv
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+*.wasm
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+.idea/
+.swap
+
+# Django database
+*sqlite*
+.env
+
+# byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.egg-info*
+
+# tests and coverage
+*.pytest_cache
+.coverage
+coverage/
+
+# database & logs
+*.db
+*.sqlite3
+*.log
+
+# venv
+env
+venv
+
+# other
+.DS_Store
+
+# production
+build
+dist
+_builder
+
+# misc
+.DS_Store
+.vscode/
