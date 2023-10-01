@@ -3,7 +3,9 @@
 
 One Charts is a data visualization platform, using which, users can create various charts such as Line Charts, Pie Charts, Bar Charts, Scatter Charts etc., ([supported charts](https://onecharts.io/collection)) and customize them easily.
 
-<iframe width="100%" height="420" src="https://www.youtube.com/embed/wbmPtuJSigc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+[//]: # ([![Watch the video]&#40;https://img.youtube.com/vi/wbmPtuJSigc/hqdefault.jpg&#41;]&#40;https://www.youtube.com/embed/wbmPtuJSigc&#41;)
+
+[<img src="https://img.youtube.com/vi/wbmPtuJSigc/hqdefault.jpg" width="60%" height="420"/>](https://www.youtube.com/embed/wbmPtuJSigc)
 
 [One Charts API](https://onecharts.io/api) - using One charts REST API, users can create, update charts *programatically and in realtime*.
 
