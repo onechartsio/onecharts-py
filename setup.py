@@ -12,7 +12,7 @@ with open('README.md', 'r') as f:
 
 requires = [
     'requests>=2.31',
-    'ipython=7.34.0'  # 7.34.0 to be compatible with google colab 1.0.0
+    'ipython==7.34.0'  # 7.34.0 to be compatible with google colab 1.0.0
 ]
 
 
