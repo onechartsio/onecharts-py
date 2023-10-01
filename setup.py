@@ -10,7 +10,7 @@ with open(os.path.join('onecharts', '__version__.py'), 'r') as f:
 with open('README.md', 'r') as f:
     readme = f.read()
 
-requires = ['requests>=2.31']
+requires = ['requests>=2.31', 'ipython>=8.16.0']
 
 
 def setup_package():
