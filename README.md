@@ -3,6 +3,8 @@
 
 One Charts is a data visualization platform, using which, users can create various charts such as Line Charts, Pie Charts, Bar Charts, Scatter Charts etc., ([supported charts](https://onecharts.io/collection)) and customize them easily.
 
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/wbmPtuJSigc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
 [One Charts API](https://onecharts.io/api) - using One charts REST API, users can create, update charts *programatically and in realtime*.
 
 This repository contains the python wrapper to interact with the One Charts API.
@@ -20,14 +22,14 @@ $ python setup.py install
 
 # Basic Usage
 Import and initialize the `onecharts` object as:
-```python
+```pycon
 >>> import onecharts
 >>> oc = onecharts.OneCharts(API_KEY)  # Add your API Key.
 ```
 
 ### [Get User Charts](https://onecharts.io/api#user_charts)
 `oc.get_user_charts()` method can be  used to retrieve public charts of an user. Example usage:
-```python
+```pycon
 >>> charts = oc.get_user_charts('adam', q='stock')
 >>> print(charts)
 {
@@ -57,7 +59,7 @@ Import and initialize the `onecharts` object as:
 
 ### [Create a New Chart](https://onecharts.io/api#new_chart)
 `oc.create_new_chart()` method can be  used to create a new chart. Example usage:
-```python
+```pycon
 >>> data = None  # Can contain some dictionary to overwrite the default data that's being cloned from.
 >>> res = oc.create_new_chart('piechart', chart_title='Rainfall in 2023', visibility='private', notes='Some notes', data=data)
 >>> print(res)
@@ -71,7 +73,7 @@ The above method creates a new piechart as shown below, which can be accessed us
 
 ### [Get Chart Config](https://onecharts.io/api#get_chart_config)
 `oc.get_chart_config()` method can be  used to get the config of a chart. Example usage:
-```python
+```pycon
 >>> res = oc.get_chart_config('KArrNpHzM-RLCo')
 >>> print(res)
 {
@@ -111,7 +113,7 @@ The above method creates a new piechart as shown below, which can be accessed us
 
 ### [Get Chart Data](https://onecharts.io/api#get_chart_data)
 `oc.get_chart_data()` method can be  used to get the data of a chart. Example usage:
-```python
+```pycon
 >>> res = oc.get_chart_data('KArrNpHzM-RLCo')
 >>> print(res)
 {
@@ -130,7 +132,7 @@ The above method creates a new piechart as shown below, which can be accessed us
 
 ### [Update Chart Data](https://onecharts.io/api#update_chart_data)
 `oc.update_chart_data()` method can be  used to get the data of a chart. Example usage:
-```python
+```pycon
 >>> # The data should follow specific format.
 >>> # Learn more about the format from here: https://onecharts.io/api#update_chart_data
 >>> data = {
