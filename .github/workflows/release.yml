@@ -3,7 +3,7 @@ name: 'Pypi Release'
 on:
   push:
     branches:
-      - main
+      - release
 
 jobs:
   pypi-publish:

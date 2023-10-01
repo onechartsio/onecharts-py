@@ -46,7 +46,7 @@ class OneCharts:
             'data': data
         })
 
-    def get_chart_image(self, chart_id: str, width: int = 900, height: int = 600, background_color: str = 'transparent') -> str:
+    def get_chart_image(self, chart_id: str, width: int = 600, height: int = 300, background_color: str = 'transparent') -> str:
         '''
         Returns the chart as SVG image by calling https://onecharts.io/export/<chart_id>
         API key is not required for this call.
@@ -59,7 +59,7 @@ class OneCharts:
             'background_color': background_color
         })
 
-    def plot_chart(self, chart_id: str, width: int = 900, height: int = 600, background_color: str = 'transparent') -> None:
+    def plot_chart(self, chart_id: str, width: int = 600, height: int = 300, background_color: str = 'transparent') -> None:
         '''
         Renders the chart as SVG image. `plot_chart` is useful in Colab's or in Jupyter notebooks.
         '''

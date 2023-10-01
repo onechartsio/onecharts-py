@@ -10,7 +10,10 @@ with open(os.path.join('onecharts', '__version__.py'), 'r') as f:
 with open('README.md', 'r') as f:
     readme = f.read()
 
-requires = ['requests>=2.31', 'ipython>=8.16.0']
+requires = [
+    'requests>=2.31',
+    'ipython=7.34.0'  # 7.34.0 to be compatible with google colab 1.0.0
+]
 
 
 def setup_package():
